@@ -1,0 +1,97 @@
+text,label
+I cannot sign in after resetting my MFA token,authentication
+The SSO login page fails with an invalid callback URL,authentication
+My password reset link expired before I could open it,authentication
+Session terminates immediately after entering verification code,authentication
+Cannot authenticate against the LDAP server from staging,authentication
+Two-factor authentication code is rejected every time,authentication
+User login returns 401 unauthorized with valid credentials,authentication
+OAuth token is revoked after five minutes unexpectedly,authentication
+How do I rotate my service account API keys securely,authentication
+Permission denied when accessing user dashboard after login,authentication
+Active Directory sync failed for user group authentication,authentication
+Single sign-on redirects in an infinite loop,authentication
+The API times out only when connecting from the office VPN,network
+DNS cannot resolve our internal microservice endpoint,network
+Packet loss spikes to forty percent across the gateway,network
+Connection refused on port 443 during high network load,network
+Keepalive ping drops connection after sixty seconds of inactivity,network
+Requests fail with connection reset by peer across subnets,network
+Proxy server returns gateway timeout 504 on heavy calls,network
+Firewall is blocking outbound HTTPS requests to external APIs,network
+SSL handshake failed during TLS negotiation with downstream service,network
+Subnet route table is missing entry for VPC peering connection,network
+High TCP latency between API container and database host,network
+WebSocket closes with code 1006 abnormal closure under VPN,network
+My Docker deployment exits immediately after startup,deployment
+Container crashes with exit code 137 out of memory,deployment
+Dokploy failed to pull the latest image from the registry,deployment
+Application boots but health check fails on port 8000,deployment
+Docker compose cannot mount volume because directory is missing,deployment
+Continuous deployment pipeline fails during container build step,deployment
+Service enters crash loop backoff state after updating env vars,deployment
+Kubernetes pod evicted due to disk pressure on worker node,deployment
+Docker daemon fails to start after system reboot,deployment
+Cannot bind to host port 80 because it is already allocated,deployment
+Entrypoint script execution denied due to permissions error,deployment
+Deployment rollback triggered after unhandled boot exception,deployment
+PostgreSQL connections are completely exhausted during peak hours,database
+Database pool size reaches limit and incoming queries hang,database
+Slow query execution blocks transaction on users table,database
+Deadlock detected when running concurrent update queries,database
+Database replica falls thirty minutes behind the master node,database
+Failed to acquire database lock within timeout limit,database
+PostgreSQL server terminated connection unexpectedly,database
+Database migration script failed on alter column statement,database
+Too many clients connected error thrown by database driver,database
+Query planner is running full table scans instead of using index,database
+Cannot establish TCP connection to database on port 5432,database
+Write transactions rejected because database disk is 95 percent full,database
+CUDA is available but PyTorch training stays on CPU,gpu
+Training crashes with CUDA out of memory error during backward pass,gpu
+NVIDIA driver version mismatch with installed CUDA runtime,gpu
+GPU utilization drops to zero percent during model evaluation,gpu
+PyTorch cannot find compatible GPU device on worker node,gpu
+Bitsandbytes requires CUDA but running on unsupported device,gpu
+Dataloader bottleneck causes severe GPU starvation,gpu
+Tensor operation failed because tensors are on different devices,gpu
+NCCL error unhandled system error during multi-GPU distributed training,gpu
+Mixed precision training causes NaN gradients on GPU device,gpu
+GPU temperature throttles performance after two hours of training,gpu
+Model weights cannot fit into 16GB GPU memory without quantization,gpu
+The endpoint returns HTTP 422 validation error on post request,api
+API gateway responds with HTTP 502 bad gateway intermittently,api
+Request payload fails validation due to missing required field,api
+API returns HTTP 404 for an endpoint listed in the documentation,api
+Pagination parameters limit and offset are ignored by API endpoint,api
+Endpoint returns empty JSON array when filtering by status,api
+CORS header access-control-allow-origin missing on response,api
+REST API returns 500 internal server error with unhandled trace,api
+JSON parsing error unexpected token in request body,api
+Rate limiting returns HTTP 429 too many requests too early,api
+API response content type is text plain instead of application json,api
+Header authorization bearer token format is rejected as invalid,api
+Which version of transformers supports SmolLM2 models,package
+Conflicting dependencies between accelerate and bitsandbytes,package
+Pip cannot resolve dependency conflict for torch and torchvision,package
+ModuleNotFoundError No module named peft after running install,package
+Package requirements require Python 3.11 but system has 3.10,package
+How do I install flash attention without pre-built wheels,package
+Uv pip compile failed with incompatible package versions,package
+Import error symbol not found when loading sentence transformers,package
+Cannot uninstall package installed by distutils,package
+Library requires numpy less than 2.0 but numpy 2.1 is installed,package
+Poetry lock file conflicts with pyproject dependencies,package
+Wheel build failed when compiling C extension for tokenizers,package
+Explain what LoRA is and how low rank adapters work,general
+What is the conceptual difference between SFT and DPO,general
+How does cross entropy loss guide sequence classification,general
+Explain the attention mechanism in simple words,general
+What is the purpose of temperature in text generation,general
+Can you explain how embeddings capture semantic similarity,general
+What does tokenization mean in large language models,general
+Explain what quantization NF4 means in QLoRA,general
+How does beam search differ from top p nucleus sampling,general
+What is the role of positional encodings in transformers,general
+Explain what fine-tuning does to model weights conceptually,general
+What is the difference between supervised learning and reinforcement learning,general

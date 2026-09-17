@@ -1,0 +1,272 @@
+[
+  {
+    "id": "qa_001",
+    "context": "JSON Web Tokens (JWT) consist of three parts: header, payload, and signature separated by dots. Expired tokens yield a 401 Unauthorized status. To refresh an expired session safely, use a refresh token via the /auth/refresh endpoint.",
+    "question": "What HTTP status code indicates an expired JWT?",
+    "answers": {
+      "text": ["401 Unauthorized"],
+      "answer_start": [121]
+    }
+  },
+  {
+    "id": "qa_002",
+    "context": "JSON Web Tokens (JWT) consist of three parts: header, payload, and signature separated by dots. Expired tokens yield a 401 Unauthorized status. To refresh an expired session safely, use a refresh token via the /auth/refresh endpoint.",
+    "question": "Which endpoint is used to refresh an expired session?",
+    "answers": {
+      "text": ["/auth/refresh"],
+      "answer_start": [211]
+    }
+  },
+  {
+    "id": "qa_003",
+    "context": "OAuth 2.0 PKCE is strongly recommended for public clients such as single-page applications and mobile apps. It replaces the static client secret with a dynamic code verifier and code challenge.",
+    "question": "What extension is recommended for OAuth 2.0 public clients?",
+    "answers": {
+      "text": ["PKCE"],
+      "answer_start": [10]
+    }
+  },
+  {
+    "id": "qa_004",
+    "context": "OAuth 2.0 PKCE is strongly recommended for public clients such as single-page applications and mobile apps. It replaces the static client secret with a dynamic code verifier and code challenge.",
+    "question": "What dynamic parameter replaces the static client secret in PKCE?",
+    "answers": {
+      "text": ["code verifier"],
+      "answer_start": [162]
+    }
+  },
+  {
+    "id": "qa_005",
+    "context": "SSH authentication keys should have permissions restricted to chmod 600 ~/.ssh/id_ed25519. Permissive file permissions cause SSH clients to reject the private key with a permissions are too open warning.",
+    "question": "What permission setting should be applied to an SSH private key file?",
+    "answers": {
+      "text": ["chmod 600"],
+      "answer_start": [62]
+    }
+  },
+  {
+    "id": "qa_006",
+    "context": "SSH authentication keys should have permissions restricted to chmod 600 ~/.ssh/id_ed25519. Permissive file permissions cause SSH clients to reject the private key with a permissions are too open warning.",
+    "question": "Which warning does SSH output when a private key file is overly permissive?",
+    "answers": {
+      "text": ["permissions are too open"],
+      "answer_start": [168]
+    }
+  },
+  {
+    "id": "qa_007",
+    "context": "API tokens can be passed via the Authorization header using Bearer <token> format. If omitted or malformed, the gateway denies access immediately with a 403 Forbidden or 401 Unauthorized response.",
+    "question": "What format is expected in the Authorization header for API tokens?",
+    "answers": {
+      "text": ["Bearer <token>"],
+      "answer_start": [60]
+    }
+  },
+  {
+    "id": "qa_008",
+    "context": "API tokens can be passed via the Authorization header using Bearer <token> format. If omitted or malformed, the gateway denies access immediately with a 403 Forbidden or 401 Unauthorized response.",
+    "question": "Which HTTP header carries the API token?",
+    "answers": {
+      "text": ["Authorization"],
+      "answer_start": [33]
+    }
+  },
+  {
+    "id": "qa_009",
+    "context": "DNS resolution queries run over UDP port 53 by default. If domain lookups hang or fail, verify that outbound UDP traffic on port 53 is not blocked by local firewall rules.",
+    "question": "Which default port and protocol are used by DNS queries?",
+    "answers": {
+      "text": ["UDP port 53"],
+      "answer_start": [32]
+    }
+  },
+  {
+    "id": "qa_010",
+    "context": "DNS resolution queries run over UDP port 53 by default. If domain lookups hang or fail, verify that outbound UDP traffic on port 53 is not blocked by local firewall rules.",
+    "question": "What issue happens when outbound UDP port 53 traffic is blocked?",
+    "answers": {
+      "text": ["domain lookups hang or fail"],
+      "answer_start": [59]
+    }
+  },
+  {
+    "id": "qa_011",
+    "context": "To check whether a remote port is reachable from Linux, use nc -zv <host> <port> or curl -v telnet://<host>:<port>. The ping command only checks ICMP echo reachability, not TCP ports.",
+    "question": "Which netcat command checks if a remote port is reachable?",
+    "answers": {
+      "text": ["nc -zv"],
+      "answer_start": [60]
+    }
+  },
+  {
+    "id": "qa_012",
+    "context": "To check whether a remote port is reachable from Linux, use nc -zv <host> <port> or curl -v telnet://<host>:<port>. The ping command only checks ICMP echo reachability, not TCP ports.",
+    "question": "What protocol does the ping command test?",
+    "answers": {
+      "text": ["ICMP"],
+      "answer_start": [141]
+    }
+  },
+  {
+    "id": "qa_013",
+    "context": "Nginx returns HTTP 502 Bad Gateway when the upstream application server is stopped or crashing. HTTP 504 Gateway Timeout occurs when the backend server fails to respond within proxy_read_timeout.",
+    "question": "What error does Nginx return when the upstream server is completely stopped?",
+    "answers": {
+      "text": ["502 Bad Gateway"],
+      "answer_start": [19]
+    }
+  },
+  {
+    "id": "qa_014",
+    "context": "Nginx returns HTTP 502 Bad Gateway when the upstream application server is stopped or crashing. HTTP 504 Gateway Timeout occurs when the backend server fails to respond within proxy_read_timeout.",
+    "question": "Which directive governs the timeout duration before Nginx throws a 504?",
+    "answers": {
+      "text": ["proxy_read_timeout"],
+      "answer_start": [178]
+    }
+  },
+  {
+    "id": "qa_015",
+    "context": "CORS preflight requests use the OPTIONS HTTP method. The browser expects the server to return Access-Control-Allow-Origin and Access-Control-Allow-Methods headers to allow cross-origin requests.",
+    "question": "What HTTP method is used for CORS preflight checks?",
+    "answers": {
+      "text": ["OPTIONS"],
+      "answer_start": [32]
+    }
+  },
+  {
+    "id": "qa_016",
+    "context": "CORS preflight requests use the OPTIONS HTTP method. The browser expects the server to return Access-Control-Allow-Origin and Access-Control-Allow-Methods headers to allow cross-origin requests.",
+    "question": "Which response header specifies the origins permitted in CORS?",
+    "answers": {
+      "text": ["Access-Control-Allow-Origin"],
+      "answer_start": [94]
+    }
+  },
+  {
+    "id": "qa_017",
+    "context": "Docker containers exit with code 137 when terminated by the Linux OOM (Out Of Memory) killer. To prevent this, increase container memory limits in docker-compose.yml under deploy.resources.limits.memory.",
+    "question": "What exit code indicates that a container was terminated by the OOM killer?",
+    "answers": {
+      "text": ["137"],
+      "answer_start": [33]
+    }
+  },
+  {
+    "id": "qa_018",
+    "context": "Docker containers exit with code 137 when terminated by the Linux OOM (Out Of Memory) killer. To prevent this, increase container memory limits in docker-compose.yml under deploy.resources.limits.memory.",
+    "question": "Where are memory limits defined in docker-compose.yml?",
+    "answers": {
+      "text": ["deploy.resources.limits.memory"],
+      "answer_start": [173]
+    }
+  },
+  {
+    "id": "qa_019",
+    "context": "To prune unused Docker images, dangling containers, and networks in one command, execute docker system prune -af. The -a flag removes all unused images, not just dangling ones.",
+    "question": "Which command removes all unused Docker images and dangling resources?",
+    "answers": {
+      "text": ["docker system prune -af"],
+      "answer_start": [89]
+    }
+  },
+  {
+    "id": "qa_020",
+    "context": "To prune unused Docker images, dangling containers, and networks in one command, execute docker system prune -af. The -a flag removes all unused images, not just dangling ones.",
+    "question": "What does the -a flag do in docker system prune?",
+    "answers": {
+      "text": ["removes all unused images"],
+      "answer_start": [126]
+    }
+  },
+  {
+    "id": "qa_021",
+    "context": "Kubernetes readiness probes determine whether a pod can accept traffic. If a readiness probe fails, the pod's IP address is removed from service endpoints without restarting the container.",
+    "question": "What happens to a pod when its readiness probe fails?",
+    "answers": {
+      "text": ["removed from service endpoints"],
+      "answer_start": [128]
+    }
+  },
+  {
+    "id": "qa_022",
+    "context": "Kubernetes readiness probes determine whether a pod can accept traffic. If a readiness probe fails, the pod's IP address is removed from service endpoints without restarting the container.",
+    "question": "Which probe determines whether a Kubernetes pod can receive traffic?",
+    "answers": {
+      "text": ["readiness probes"],
+      "answer_start": [11]
+    }
+  },
+  {
+    "id": "qa_023",
+    "context": "Docker multistage builds reduce image size by separating build dependencies from runtime binaries. The final stage uses COPY --from=builder to copy only necessary artifacts.",
+    "question": "What technique separates build tooling from the production runtime image?",
+    "answers": {
+      "text": ["multistage builds"],
+      "answer_start": [7]
+    }
+  },
+  {
+    "id": "qa_024",
+    "context": "Docker multistage builds reduce image size by separating build dependencies from runtime binaries. The final stage uses COPY --from=builder to copy only necessary artifacts.",
+    "question": "What flag in the COPY command extracts files from a previous build stage?",
+    "answers": {
+      "text": ["--from=builder"],
+      "answer_start": [125]
+    }
+  },
+  {
+    "id": "qa_025",
+    "context": "PostgreSQL default configuration listens on port 5432. To allow external client connections, listen_addresses in postgresql.conf must be set to '*' and matching entries added to pg_hba.conf.",
+    "question": "What is the default TCP port for PostgreSQL?",
+    "answers": {
+      "text": ["5432"],
+      "answer_start": [49]
+    }
+  },
+  {
+    "id": "qa_026",
+    "context": "PostgreSQL default configuration listens on port 5432. To allow external client connections, listen_addresses in postgresql.conf must be set to '*' and matching entries added to pg_hba.conf.",
+    "question": "Which configuration file controls client authentication rules in PostgreSQL?",
+    "answers": {
+      "text": ["pg_hba.conf"],
+      "answer_start": [180]
+    }
+  },
+  {
+    "id": "qa_027",
+    "context": "Redis runs on default port 6379. To persist in-memory data to disk periodically, Redis uses RDB snapshots, while AOF (Append Only File) logs every write operation for durability.",
+    "question": "What default port does Redis use?",
+    "answers": {
+      "text": ["6379"],
+      "answer_start": [27]
+    }
+  },
+  {
+    "id": "qa_028",
+    "context": "Redis runs on default port 6379. To persist in-memory data to disk periodically, Redis uses RDB snapshots, while AOF (Append Only File) logs every write operation for durability.",
+    "question": "Which persistence mode in Redis logs every write operation?",
+    "answers": {
+      "text": ["AOF"],
+      "answer_start": [113]
+    }
+  },
+  {
+    "id": "qa_029",
+    "context": "Database connection pooling helps mitigate Too many connections errors. Tools like PgBouncer maintain a pool of reusable connections to avoid per-client connection overhead.",
+    "question": "Which lightweight connection pooler is commonly used with PostgreSQL?",
+    "answers": {
+      "text": ["PgBouncer"],
+      "answer_start": [83]
+    }
+  },
+  {
+    "id": "qa_030",
+    "context": "Database connection pooling helps mitigate Too many connections errors. Tools like PgBouncer maintain a pool of reusable connections to avoid per-client connection overhead.",
+    "question": "What error is mitigated by implementing database connection pooling?",
+    "answers": {
+      "text": ["Too many connections"],
+      "answer_start": [43]
+    }
+  }
+]
